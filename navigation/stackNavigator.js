@@ -1,3 +1,4 @@
+
 import React from 'react';
 //설치한 스택 네비게이션 라이브러리를 가져옵니다
 import { createStackNavigator } from '@react-navigation/stack';
@@ -19,12 +20,14 @@ const StackNavigator = () =>{
         <Stack.Navigator
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: "black",
-                    borderBottomColor: "black",
-                    shadowColor: "black",
+                    backgroundColor: "white",
+                    borderBottomColor: "white",
+                    shadowColor: "white",
                     height:100
                 },
-                headerTintColor: "#FFFFFF",
+                //헤더의 텍스트를 왼쪾에 둘지 가운데에 둘지를 결정
+                headerTitleAlign:'left',
+                headerTintColor: "#000",
                 headerBackTitleVisible: false
             }}
             
